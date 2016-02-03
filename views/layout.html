@@ -2,8 +2,60 @@
 <html>
 <head>
   <title>Trip Planner</title>
+  <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/stylesheets/style.css" rel="stylesheet">
 </head>
 <body>
-{% block content %}{% endblock %}
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+  <div class="navbar-header">
+  <div class="navbar-brand">
+  <span class="glyphicon glyphicon-plane"></span>
+  Trip Planner</div>
+  </div>
+  <ul class="nav navbar-nav navbar-left">
+    <li class="active"><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-8">
+    <div class="map">
+      [[map]]
+    </div>
+    </div> <!-- close column -->
+    <div class="col-md-4">
+      <div class="options">
+          {% block content %}{% endblock %}
+      </div>
+      Day 2<br>
+      <div class="itin">
+          <div class="day-btns">
+          <button class="btn btn-default" type="submit">1</button>
+          <button class="btn btn-default" type="submit">2</button>
+          <button class="btn btn-default" type="submit">3</button>
+          <button class="btn btn-default" type="submit">+</button>
+          </div>
+      My Hotel<br>
+      <ul><li>
+        [[xxxxxxxxxxxxxxxxx]] <button class="btn btn-danger" type="submit">x</button>
+      </li></ul>
+      My Restaurants<br>
+      <ul><li>
+        [[xxxxxxxxxxxxxxxxx]] <button class="btn btn-danger" type="submit">x</button>
+      </li></ul>
+      My Activities<br>
+      <ul><li>
+        [[xxxxxxxxxxxxxxxxx]] <button class="btn btn-danger" type="submit">x</button>
+      </li></ul>
+      </div>
+    </div>
+  </div> <!-- close row -->
+</div> <!-- close container -->
+<script src="/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+<script src="/jquery/jquery.min.js" type="text/javascript"></script>
 </body>
 </html>

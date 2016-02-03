@@ -1,0 +1,26 @@
+body {
+  background-color: grey;
+  padding-top: 70px; }
+
+span.glyphicon {
+  font-size: 1.5em; }
+
+ul {
+  list-style-type: none; }
+  ul li {
+    margin: 0 5px 0 0; }
+
+.options {
+  display: inline-block;
+  background-color: brown;
+  width: 100%;
+  height: 300px; }
+
+.itin {
+  display: inline-block;
+  background-color: green;
+  width: 100%;
+  height: 300px; }
+
+.day-btns {
+  background-color: orange; }
