@@ -20,8 +20,9 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 
 // serve static files 
-app.use(express.static(__dirname + '/public'))
-
+app.use(express.static(__dirname + '/public'));
+app.use('/bootstrap', express.static(__dirname + '/node_modules/bootstrap/dist'));
+app.use('/jquery', express.static(__dirname + '/node_modules/jquery/dist'));
 
 // middleware for our dynamic routes 
 app.use('/', require('./routes'));
