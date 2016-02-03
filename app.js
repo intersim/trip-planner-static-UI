@@ -29,12 +29,10 @@ app.use('/', require('./routes'));
 
 //error handling logic (this is where next takes our error)
 app.use(function(err, req, res, next){
-  console.log('err: ', err)
-  res.status(err.status || 500)
+  console.log('err: ', err);
+  res.status(err.status || 500);
   // presumes that we have some basic error html 
-  // res.render('error', {
-  //     error: err
-  // });
+  res.send('error: ', err);
 });
 
 var port = 3000;; 
