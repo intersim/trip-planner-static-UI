@@ -5,6 +5,9 @@ body {
 span.glyphicon {
   font-size: 1.5em; }
 
+#map-canvas {
+  height: 75vh; }
+
 ul {
   list-style-type: none; }
   ul li {
