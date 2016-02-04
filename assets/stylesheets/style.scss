@@ -1,7 +1,7 @@
 @import "media";
 
 body {
-  padding-top: 70px;
+  padding-top: 65px;
 }
 
 span.glyphicon {
@@ -9,7 +9,7 @@ span.glyphicon {
 }
 
 #map-canvas {
-  height: 100vh;
+  height: 91vh;
 }
 
 ul {
@@ -47,4 +47,11 @@ select {
 .btn {
   border-radius: 50%;
 }
+
+
+.label {
+  margin-right: 5px;
+}
+
+
 

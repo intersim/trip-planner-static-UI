@@ -1,11 +1,11 @@
 body {
-  padding-top: 70px; }
+  padding-top: 65px; }
 
 span.glyphicon {
   font-size: 1.5em; }
 
 #map-canvas {
-  height: 100vh; }
+  height: 91vh; }
 
 ul {
   list-style-type: none; }
@@ -34,3 +34,6 @@ select {
 
 .btn {
   border-radius: 50%; }
+
+.label {
+  margin-right: 5px; }
