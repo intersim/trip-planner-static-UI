@@ -17,11 +17,16 @@
       </div> <!-- close navbar-brand -->
     </div>  <!-- close navbar-header -->
   
-  <ul class="nav navbar-nav navbar-left">
-    <li class="active"><a href="#">Home</a></li>
-    <li><a href="#">About</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
+<!--   <div class="collapse navbar-collapse">
+    <button type="button" class="navbar-toggle"
+      data-toggle="collapse" data-target="#navbar-collapse"></button> -->
+    <ul class="nav navbar-nav navbar-left">
+      <li class="active"><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+<!--   </div> -->
 
   </div> <!-- close container -->
 </nav> <!-- close nav -->
@@ -29,38 +34,43 @@
 <div class="container-fluid">
   <div class="row">
 
-    <div class="col-md-8">
+    <div class="col-lg-8">
       <div id="map-canvas"></div>
     </div> <!-- close col-md-8 -->
   
-    <div class="col-md-4">
-      <div class="options">
+    <div class="col-lg-4">
+      <div class="options panel panel-default">
           {% block content %}{% endblock %}
       </div> <!-- close options -->
 
-      <div class="itin">
-          <div class="day-btns">
-            <button class="btn btn-default" type="submit">1</button>
-            <button class="btn btn-default" type="submit">2</button>
-            <button class="btn btn-default" type="submit">3</button>
-            <button class="btn btn-default" type="submit">+</button>
+      <div id="day-header">
+       <h2><span class="label label-info">Day 1<button class="btn btn-danger rm-btn" type="submit">x</button></span></h2>
+      </div>
+
+      <div class="itin panel panel-default">
+          <div class="panel-heading">
+            <button class="btn btn-default day-btn" type="submit">1</button>
+            <button class="btn btn-default day-btn" type="submit">2</button>
+            <button class="btn btn-default day-btn" type="submit">3</button>
+            <button id="day-submit" class="btn btn-success" type="submit">+</button>
           </div>
-
-      My Hotel<br>
-      <ul><li>
-        [[xxxxxxxxxxxxxxxxx]] <button class="btn btn-danger" type="submit">x</button>
+          <div class="panel body">
+      <ul id="hotel-list">
+      <h5>My Hotel</h5>
+      <li>
+        [[xxxxxxxxxxxxxxxxx]] <button class="btn btn-danger rm-btn" type="submit">x</button>
       </li></ul>
-
-      My Restaurants<br>
-      <ul><li>
-        [[xxxxxxxxxxxxxxxxx]] <button class="btn btn-danger" type="submit">x</button>
+      <ul id="rest-list">
+      <h5>My Restaurants</h5>
+      <li>
+        [[xxxxxxxxxxxxxxxxx]] <button class="btn btn-danger rm-btn" type="submit">x</button>
       </li></ul>
-
-      My Activities<br>
-      <ul><li>
-        [[xxxxxxxxxxxxxxxxx]] <button class="btn btn-danger" type="submit">x</button>
+      <ul id='activity-list'>
+      <h5>My Activities</h5>
+      <li>
+        [[xxxxxxxxxxxxxxxxx]] <button class="btn btn-danger rm-btn" type="submit">x</button>
       </li></ul>
-
+      </div>
       </div> <!-- close itin -->
     </div> <!-- close col-md-4 -->
   </div> <!-- close row -->
@@ -69,6 +79,7 @@
 <script src="/jquery/jquery.min.js" type="text/javascript"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAqBKObcYhkjvifxwCRs--jbwQMFmddukg&sensor=true"></script>
 <script src="/map.js" type="text/javascript"></script>
+<script src="/script.js" type="text/javascript"></script>
 <script src="/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
 </body>
 </html>
